@@ -1,0 +1,45 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "standard"
+  ],
+  "plugins": [
+    "vue"
+  ],
+  "rules": {
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 4,
+        "multiline": {
+          "max": 4,
+          "allowFirstLine": false
+        }
+      }
+    ],
+    "eqeqeq": 0,
+    "vue/attribute-hyphenation": [
+      "error",
+      "never",
+      {
+        "ignore": [
+          "custom-prop"
+        ]
+      }
+    ],
+    "vue/no-multi-spaces": [
+      "error",
+      {
+        "ignoreProperties": true
+      }
+    ]
+  }
+}
